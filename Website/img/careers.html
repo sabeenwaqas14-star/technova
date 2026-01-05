@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Careers | TechNova</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Custom Animations -->
+	<style>
+		@keyframes gradient {
+			0% { background-position: 0% 50%; }
+			50% { background-position: 100% 50%; }
+			100% { background-position: 0% 50%; }
+		}
+		.animate-gradient {
+			background-size: 400% 400%;
+			animation: gradient 18s ease infinite;
+		}
+
+		@keyframes float {
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(-35px); }
+		}
+		.float { animation: float 8s ease-in-out infinite; }
+		.float-slow { animation: float 12s ease-in-out infinite; }
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230327195509" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230327195509">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="bg-gray-950 text-white antialiased">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 w-full z-50 backdrop-blur bg-black/40 border-b border-white/10">
+	<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+		<h1 class="text-2xl font-extrabold tracking-wide">
+			Tech<span class="text-cyan-400">Nova</span>
+		</h1>
+
+		<nav class="hidden md:flex gap-8 text-sm">
+			<a href="index.html" class="hover:text-cyan-400 transition">About</a>
+			<a href="careers.html" class="hover:text-cyan-400 transition">Careers</a>
+			<a href="contacts.html" class="hover:text-cyan-400 transition">Contact</a>
+		</nav>
+	</div>
+</header>
+		<main class="careers">
+			<!-- ================= HERO ================= -->
+			<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+
+				<!-- Animated Background -->
+				<div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-black animate-gradient"></div>
+
+				<!-- Canvas Animation Layer -->
+				<canvas id="hero-canvas" class="absolute inset-0 w-full h-full"></canvas>
+
+				<!-- Floating Blobs -->
+				<div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-3xl float"></div>
+				<div class="absolute top-1/3 -right-40 w-[500px] h-[500px] bg-pink-500/20 rounded-full blur-3xl float-slow"></div>
+
+				<!-- Content -->
+				<div class="relative z-10 max-w-5xl text-center px-6">
+					<h2 class="text-5xl md:text-7xl font-extrabold leading-tight">
+						Join Our <span class="text-cyan-400">Team</span><br />
+						Build the Future
+					</h2>
+
+					<p class="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
+						We are looking for passionate individuals ready to innovate, collaborate, and make an impact.
+					</p>
+
+					<div class="mt-10 flex justify-center gap-6">
+						<a href="#openings"
+							 class="px-8 py-4 bg-cyan-500 text-black font-semibold rounded-xl hover:bg-cyan-400 transition">
+							View Openings
+						</a>
+						<a href="#benefits"
+							 class="px-8 py-4 border border-white/30 rounded-xl hover:bg-white/10 transition">
+							Why Join Us
+						</a>
+					</div>
+				</div>
+			</section>
+
+					<!-- //=== choose-technova = section ================================================================== -->
+					<section class="choose-technova mb-16">
+						<div class="choose-technova__title title text-center text-4xl font-bold text-white mb-12">why choose <span class="text_grey text-gray-300">TechNova</span><span class="text-accent_orange text-orange-500">/</span>
+						</div>
+						<div class="choose-technova__content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+							<div class="choose-technova__card choose-card block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+								<div class="choose-card__title text-xl font-semibold text-white mb-4">Wellness Program</div>
+								<div class="choose-card__text text-gray-300">Take care of your body and mind, get fit, relax and have fun with our
+									wellness activities.</div>
+							</div>
+							<div class="choose-technova__card choose-card block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+								<div class="choose-card__title text-xl font-semibold text-white mb-4">Dedicated Team</div>
+								<div class="choose-card__text text-gray-300">Join a family-like team, work together towards success and enjoy a
+									friendly work environment.</div>
+							</div>
+							<div class="choose-technova__card choose-card block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+								<div class="choose-card__title text-xl font-semibold text-white mb-4">Health Insurance</div>
+								<div class="choose-card__text text-gray-300">Stay healthy and worry-free with our comprehensive health coverage.
+								</div>
+							</div>
+							<div class="choose-technova__card choose-card block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300">
+								<div class="choose-card__title text-xl font-semibold text-white mb-4">Corporate Education</div>
+								<div class="choose-card__text text-gray-300">Boost your skills, stay up-to-date with the latest trends and get
+									promoted!</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- //=== job-listing = section ================================================================== -->
+					<section class="job-listing mb-16">
+						<div class="job-listing__title title text-center text-4xl font-bold text-white mb-12">job <span class="text_grey text-gray-300">listings</span><span class="text-accent_orange text-orange-500">/</span>
+						</div>
+						<div class="job-listing__positions grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+							<div class="job-listing__position position-job bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer" data-popup="#jobs-popup" data-quantity="3" data-first-title="Backend" data-second-title="Developers">
+								<div class="position-job__wrapper  block-cross-in">
+									<div class="position-job__title text-xl font-semibold text-white mb-2">Backend Developers</div>
+									<div class="position-job__description text-gray-300">3 positions</div>
+								</div>
+							</div>
+							<div class="job-listing__position position-job bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer" data-popup="#jobs-popup" data-quantity="2" data-first-title="Frontend" data-second-title="Developers">
+								<div class="position-job__wrapper  block-cross-in">
+									<div class="position-job__title text-xl font-semibold text-white mb-2">Frontend Developers</div>
+									<div class="position-job__description text-gray-300">2 positions</div>
+								</div>
+							</div>
+							<div class="job-listing__position position-job bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer" data-popup="#jobs-popup" data-quantity="1" data-first-title="QA">
+								<div class="position-job__wrapper  block-cross-in">
+									<div class="position-job__title text-xl font-semibold text-white mb-2">QA</div>
+									<div class="position-job__description text-gray-300">1 position</div>
+								</div>
+							</div>
+							<div class="job-listing__position position-job bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer" data-popup="#jobs-popup" data-quantity="0" data-first-title="UX/UI" data-second-title="Designers">
+								<div class="position-job__wrapper  block-cross-in">
+									<div class="position-job__title text-xl font-semibold text-white mb-2">UX/UI Designers</div>
+									<div class="position-job__description text-gray-300">0 positions. but you can send us a resume</div>
+								</div>
+							</div>
+							<div class="job-listing__position position-job bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer" data-popup="#jobs-popup" data-quantity="1" data-first-title="HR">
+								<div class="position-job__wrapper  block-cross-in">
+									<div class="position-job__title text-xl font-semibold text-white mb-2">HR</div>
+									<div class="position-job__description text-gray-300">1 position</div>
+								</div>
+							</div>
+							<div class="job-listing__position position-job bg-white bg-opacity-10 rounded-lg shadow-2xl p-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer" data-popup="#jobs-popup" data-quantity="0" data-first-title="Data" data-second-title="Analysts">
+								<div class="position-job__wrapper  block-cross-in">
+									<div class="position-job__title text-xl font-semibold text-white mb-2">Data Analysts</div>
+									<div class="position-job__description text-gray-300">0 positions. but you can send us a resume</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+					<!-- //=== cv-form = section ================================================================== -->
+					<section class="cv-form form">
+
+					</section>
+
+					<!-- //=== CASCADE = section (tips for interview)================================================================== -->
+					<section class="cascade mb-16">
+						<div class="cascade__title title text-center text-4xl font-bold text-white mb-12">tips for acing the <span class="text_grey text-gray-300">interview</span><span class="text-accent_orange text-orange-500">/</span>
+						</div>
+
+						<div class="cascade__slider cascade-slider space-y-8">
+							<div class="cascade-slider__item cascade-item block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6">
+								<div class="cascade-item__wrapper">
+									<div class="cascade-item__row flex items-start space-x-6">
+										<div class="cascade-item__numbers text_grey text-4xl font-bold text-gray-400">
+											<div class="numbers-column">1</div>
+										</div>
+										<div class="cascade-item__text text-cascade-item flex-1">
+											<div class="text-cascade-item__title text-accent_aqua text-xl font-semibold text-cyan-400 mb-4"># First things first.</div>
+											<div class="text-cascade-item__main text-gray-300 mb-4">
+												<p>Apply for a job or just send us your CV. Our HR managers will contact you shortly.</p>
+											</div>
+											<div class="text-cascade-item__tips text_grey text-gray-400">
+												<p>---<br>
+													**Tip** If you attach a cover letter, your chances of landing an interview rise
+													significantly!<br>
+													---</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cascade-slider__item cascade-item block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6">
+								<div class="cascade-item__wrapper">
+									<div class="cascade-item__row flex items-start space-x-6">
+										<div class="cascade-item__numbers text_grey text-4xl font-bold text-gray-400">
+											<div class="numbers-column">2</div>
+										</div>
+										<div class="cascade-item__text text-cascade-item flex-1">
+											<div class="text-cascade-item__title text-accent_aqua text-xl font-semibold text-cyan-400 mb-4"># Tech interview with the team</div>
+											<div class="text-cascade-item__main text-gray-300 mb-4">
+												<p>It'll be awesome if you look at the job offer once again and prepare some questions for us
+													before the interview. You can also refresh (if necessary) your knowledge about our tech stack.
+													We don't expect you to tell us definitions of tech terms. Instead, we hope to see your
+													understanding and expertise.
+												</p>
+											</div>
+											<div class="text-cascade-item__tips text_grey text-gray-400">
+												<p>---<br>**Tip**: It's more valuable to see an example of a theoretical issue put into practice
+													rather than the ability to provide definitions. Prepare effective use cases from your tech
+													experience.<br>
+													---</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cascade-slider__item cascade-item block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6">
+								<div class="cascade-item__wrapper">
+									<div class="cascade-item__row flex items-start space-x-6">
+										<div class="cascade-item__numbers text_grey text-4xl font-bold text-gray-400">
+											<div class="numbers-column">3</div>
+										</div>
+										<div class="cascade-item__text text-cascade-item flex-1">
+											<div class="text-cascade-item__title text-accent_aqua text-xl font-semibold text-cyan-400 mb-4"># Final round: an interview with project
+												managers and CTO</div>
+											<div class="text-cascade-item__main text-gray-300 mb-4">
+												<p>Once the second round is done, we will have an approximate understanding of your level of
+													expertise, the type of tasks we can assign to you, and more. The aim of the final interview is
+													to get to know you better, see whether you and the team would make a perfect match, and
+													discover your strong
+													points. That's the stage where you get a chance to demonstrate your expertise and desire to
+													advance
+													professionally working on our product.</p>
+												<p>We are going to discuss working conditions and future tasks and answer your questions about
+													the team, the product, our workflow, etc.</p>
+											</div>
+											<div class="text-cascade-item__tips text_grey text-gray-400">
+												<p>---<br>**Tip** Just relax and be yourself! We value honesty and open-mindedness.<br>---</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cascade-slider__item cascade-item block-cross-out bg-white bg-opacity-10 rounded-lg shadow-2xl p-6">
+								<div class="cascade-item__wrapper">
+									<div class="cascade-item__row flex items-start space-x-6">
+										<div class="cascade-item__numbers text_grey text-4xl font-bold text-gray-400">
+											<div class="numbers-column">4</div>
+										</div>
+										<div class="cascade-item__text text-cascade-item flex-1">
+											<div class="text-cascade-item__main text-gray-300 mb-4">
+												<p>We prepare an offer and set a date for your first day at work.</p>
+											</div>
+											<div class="text-cascade-item__title text-accent_aqua text-xl font-semibold text-cyan-400">**Welcome to the TechNova team!**</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- //======= relocate = section ================================================================== -->
+					<section class="relocate mb-16">
+						<div class="relocate__title title text-center text-4xl font-bold text-white mb-12">relocate <span class="text_grey text-gray-300">with us</span><span class="text-accent_orange text-orange-500">/</span>
+						</div>
+
+						<div class="relocate__text text-relocate text-center mb-12">
+							<div class="text-relocate__main text-accent_aqua text-2xl font-semibold text-cyan-400 mb-4">We can help you move to uet lahore</div>
+							<div class="text-relocate__hashes text-gray-300">#TravelAssistance #LogisticsSupport #AccommodationSupport
+								#LegalAssistance #FamilyRelocationSupport #SettlingIn #LeisureActivities #LanguageStudies</div>
+						</div>
+
+						<div class="relocate__segment relocate__segment_three-columns grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+							<div class="relocate__unit column-unit bg-white bg-opacity-10 rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+								<div class="column-unit__title text-xl font-semibold text-white p-4">Come see uet lahore with us</div>
+								<div class="column-unit__image">
+									<picture><source srcset="img/stories/photo-4.png" type="image/webp"><img src="img/stories/photo-4.png" alt="Night City Lights" class="w-full h-48 object-cover"></picture>
+								</div>
+							</div>
+							<div class="relocate__unit column-unit bg-white bg-opacity-10 rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+								<div class="column-unit__image">
+									<picture><source srcset="img/stories/photo-3.png" type="image/webp"><img src="img/stories/photo-3.png" alt="The East is a delicate matter" class="w-full h-48 object-cover"></picture>
+								</div>
+							</div>
+							<div class="relocate__unit column-unit bg-white bg-opacity-10 rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+								<div class="column-unit__image">
+									<picture><source srcset="img/stories/photo-5.png" type="image/webp"><img src="img/stories/photo-5.png" alt="It is the tallest one!" class="w-full h-48 object-cover"></picture>
+								</div>
+								<div class="column-unit__title column-unit__title_last text-xl font-semibold text-white p-4">Explore all this beautiful land!</div>
+							</div>
+						</div>
+
+						<div class="relocate__segment relocate__segment_two-columns grid grid-cols-1 md:grid-cols-2 gap-8">
+							<div class="relocate__unit column-unit bg-white bg-opacity-10 rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+								<div class="column-unit__image">
+									<picture><source srcset="img/stories/photo-8.png" type="image/webp"><img src="img/stories/photo-8.png" alt="Just a flowerbed in the yard" class="w-full h-48 object-cover"></picture>
+								</div>
+							</div>
+							<div class="relocate__unit column-unit bg-white bg-opacity-10 rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+								<div class="column-unit__image">
+									<picture><source srcset="img/stories/photo-1.png" type="image/webp"><img src="img/stories/photo-1.png" alt="Sunset" class="w-full h-48 object-cover"></picture>
+								</div>
+							</div>
+						</div>
+
+				</div>
+			</div>
+		</main>
+
+		<footer class="py-10 border-t border-white/10 bg-black/60">
+			<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+				<span class="text-sm text-gray-400">
+					© 2026 TechNova. All rights reserved.
+				</span>
+
+				<div class="flex gap-6 text-sm">
+					<a href="#" class="hover:text-cyan-400 transition">Privacy</a>
+					<a href="#" class="hover:text-cyan-400 transition">Terms</a>
+					<a href="contacts.html" class="hover:text-cyan-400 transition">Contact</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="jobs-popup" aria-hidden="true" class="popup jobs-popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<div class="button-wrapper">
+						<button data-close type="button" class="popup__close">back</button>
+						<div class="animated-line"></div>
+					</div>
+
+					<div class="popup__title">Backend <span class="text_grey">Developers</span><span class="text-accent_orange">/</span></div>
+					<div class="popup__text-wrapper block-cross-out">
+						<div class="popup__text text-popup">
+							<div class="text-popup__description">Join our innovative team at TechNova as a Backend Developer. We are seeking talented individuals passionate about creating efficient, scalable server-side solutions that power our cutting-edge software products. If you thrive on solving complex technical challenges and collaborating in a dynamic environment, this is the opportunity for you.</div>
+							<ul class="text-popup__features triangeled-list">
+								<li class="triangeled-list__item">The team uses: <br>Node.js, Express.js, MongoDB, PostgreSQL, Docker, Kubernetes.</li>
+								<li class="triangeled-list__item">Primary responsibilities: <br>Design and implement RESTful APIs, optimize database performance, ensure application security, integrate with frontend systems, participate in agile development processes.</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- <a href="#" class="position-button">
+					<div class="position-button__title">Backend Developer (Node.js)</div>
+					<div class="position-button__link">view</div>
+					<picture><source srcset="img/careers/team-bg.webp" type="image/webp"><img class="position-button__bg" src="img/careers/team-bg.jpg" alt=""></picture>
+				</a> -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+class CanvasAnimation {
+  constructor() {
+    this.canvas = document.getElementById('hero-canvas');
+    this.ctx = this.canvas.getContext('2d');
+    this.particles = [];
+    this.geometricShapes = [];
+    this.waves = [];
+    this.animationId = null;
+
+    this.init();
+    this.resize();
+    this.createParticles();
+    this.createGeometricShapes();
+    this.createWaves();
+    this.animate();
+
+    window.addEventListener('resize', () => this.resize());
+  }
+
+  init() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+  }
+
+  resize() {
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
+  }
+
+  createParticles() {
+    const particleCount = 50;
+    for (let i = 0; i < particleCount; i++) {
+      this.particles.push({
+        x: Math.random() * this.canvas.width,
+        y: Math.random() * this.canvas.height,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        size: Math.random() * 2 + 1,
+        opacity: Math.random() * 0.5 + 0.2,
+        color: `hsl(${Math.random() * 60 + 180}, 70%, 60%)`
+      });
+    }
+  }
+
+  createGeometricShapes() {
+    const shapeCount = 8;
+    for (let i = 0; i < shapeCount; i++) {
+      const shape = {
+        x: Math.random() * this.canvas.width,
+        y: Math.random() * this.canvas.height,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        size: Math.random() * 30 + 20,
+        rotation: 0,
+        rotationSpeed: (Math.random() - 0.5) * 0.02,
+        type: Math.floor(Math.random() * 3), // 0: triangle, 1: square, 2: hexagon
+        opacity: Math.random() * 0.3 + 0.1,
+        color: `hsl(${Math.random() * 60 + 180}, 70%, 60%)`
+      };
+      this.geometricShapes.push(shape);
+    }
+  }
+
+  createWaves() {
+    const waveCount = 3;
+    for (let i = 0; i < waveCount; i++) {
+      this.waves.push({
+        amplitude: Math.random() * 20 + 10,
+        frequency: Math.random() * 0.01 + 0.005,
+        phase: Math.random() * Math.PI * 2,
+        speed: Math.random() * 0.02 + 0.01,
+        y: this.canvas.height * (0.3 + i * 0.2),
+        opacity: Math.random() * 0.2 + 0.1,
+        color: `hsl(${Math.random() * 60 + 180}, 70%, 60%)`
+      });
+    }
+  }
+
+  drawParticle(particle) {
+    this.ctx.save();
+    this.ctx.globalAlpha = particle.opacity;
+    this.ctx.fillStyle = particle.color;
+    this.ctx.beginPath();
+    this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+    this.ctx.fill();
+    this.ctx.restore();
+  }
+
+  drawGeometricShape(shape) {
+    this.ctx.save();
+    this.ctx.globalAlpha = shape.opacity;
+    this.ctx.fillStyle = shape.color;
+    this.ctx.translate(shape.x, shape.y);
+    this.ctx.rotate(shape.rotation);
+
+    this.ctx.beginPath();
+    if (shape.type === 0) {
+      // Triangle
+      this.ctx.moveTo(0, -shape.size);
+      this.ctx.lineTo(-shape.size * 0.866, shape.size * 0.5);
+      this.ctx.lineTo(shape.size * 0.866, shape.size * 0.5);
+    } else if (shape.type === 1) {
+      // Square
+      this.ctx.rect(-shape.size / 2, -shape.size / 2, shape.size, shape.size);
+    } else {
+      // Hexagon
+      for (let i = 0; i < 6; i++) {
+        const angle = (i * Math.PI) / 3;
+        const x = shape.size * Math.cos(angle);
+        const y = shape.size * Math.sin(angle);
+        if (i === 0) this.ctx.moveTo(x, y);
+        else this.ctx.lineTo(x, y);
+      }
+    }
+    this.ctx.closePath();
+    this.ctx.fill();
+    this.ctx.restore();
+  }
+
+  drawWave(wave) {
+    this.ctx.save();
+    this.ctx.globalAlpha = wave.opacity;
+    this.ctx.strokeStyle = wave.color;
+    this.ctx.lineWidth = 2;
+    this.ctx.beginPath();
+
+    for (let x = 0; x < this.canvas.width; x += 5) {
+      const y = wave.y + Math.sin(x * wave.frequency + wave.phase) * wave.amplitude;
+      if (x === 0) this.ctx.moveTo(x, y);
+      else this.ctx.lineTo(x, y);
+    }
+    this.ctx.stroke();
+    this.ctx.restore();
+  }
+
+  updateParticles() {
+    this.particles.forEach(particle => {
+      particle.x += particle.vx;
+      particle.y += particle.vy;
+
+      if (particle.x < 0 || particle.x > this.canvas.width) particle.vx *= -1;
+      if (particle.y < 0 || particle.y > this.canvas.height) particle.vy *= -1;
+    });
+  }
+
+  updateGeometricShapes() {
+    this.geometricShapes.forEach(shape => {
+      shape.x += shape.vx;
+      shape.y += shape.vy;
+      shape.rotation += shape.rotationSpeed;
+
+      if (shape.x < -shape.size || shape.x > this.canvas.width + shape.size) shape.vx *= -1;
+      if (shape.y < -shape.size || shape.y > this.canvas.height + shape.size) shape.vy *= -1;
+    });
+  }
+
+  updateWaves() {
+    this.waves.forEach(wave => {
+      wave.phase += wave.speed;
+    });
+  }
+
+  animate() {
+    // Clear canvas with slight trail effect
+    this.ctx.fillStyle = 'rgba(17, 24, 39, 0.1)'; // dark bg with alpha
+    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+    this.updateParticles();
+    this.updateGeometricShapes();
+    this.updateWaves();
+
+    // Draw waves first (background)
+    this.waves.forEach(wave => this.drawWave(wave));
+
+    // Draw geometric shapes
+    this.geometricShapes.forEach(shape => this.drawGeometricShape(shape));
+
+    // Draw particles (foreground)
+    this.particles.forEach(particle => this.drawParticle(particle));
+
+    this.animationId = requestAnimationFrame(() => this.animate());
+  }
+
+  destroy() {
+    if (this.animationId) {
+      cancelAnimationFrame(this.animationId);
+    }
+    window.removeEventListener('resize', this.resize);
+  }
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  new CanvasAnimation();
+});
+</script>
+
+</body>
+
+</html>
